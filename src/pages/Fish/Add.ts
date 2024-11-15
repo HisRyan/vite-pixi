@@ -1,6 +1,6 @@
 import { Sprite, Container, DisplacementFilter } from "pixi.js";
 
-export function addBackground(app) {
+export function addBackground(app: any) {
   // Create a background sprite.
   const background = Sprite.from("background");
 
@@ -27,7 +27,7 @@ export function addBackground(app) {
   app.stage.addChild(background);
 }
 
-export function addFishes(app, fishes) {
+export function addFishes(app: any, fishes: any) {
   const fishContainer = new Container();
   app.stage.addChild(fishContainer);
   const fishCount = 20;
@@ -38,7 +38,7 @@ export function addFishes(app, fishes) {
     const fishAsset = fishAssets[i % fishAssets.length];
 
     // Create a fish sprite.
-    const fish = Sprite.from(fishAsset);
+    const fish: any = Sprite.from(fishAsset);
 
     // Center the sprite anchor.
     fish.anchor.set(0.5);
@@ -63,9 +63,8 @@ export function addFishes(app, fishes) {
   }
 }
 
-export function animateFishes(app, fishes, time) {
+export function animateFishes(app: any, fishes: any) {
   // Extract the delta time from the Ticker object.
-  const delta = time.deltaTime;
 
   // Define the padding around the stage where fishes are considered out of sight.
   const stagePadding = 100;
@@ -73,7 +72,7 @@ export function animateFishes(app, fishes, time) {
   const boundHeight = app.screen.height + stagePadding * 2;
 
   // Iterate through each fish sprite.
-  fishes.forEach((fish) => {
+  fishes.forEach((fish: any) => {
     // Animate the fish movement direction according to the turn speed.
     fish.direction += fish.turnSpeed * 0.01;
 
@@ -100,7 +99,8 @@ export function animateFishes(app, fishes, time) {
   });
 }
 
-export function animateWaterOverlay(app, time, overlay) {
+export function animateWaterOverlay(app: any, time: any, overlay: any) {
+  console.log(app);
   // Extract the delta time from the Ticker object.
   const delta = time.deltaTime;
 
@@ -109,7 +109,7 @@ export function animateWaterOverlay(app, time, overlay) {
   overlay.tilePosition.y -= delta;
 }
 
-export function addDisplacementEffect(app) {
+export function addDisplacementEffect(app: any) {
   // Create a sprite from the preloaded displacement asset.
   const sprite = Sprite.from("displacement");
 

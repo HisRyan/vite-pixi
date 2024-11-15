@@ -19,7 +19,7 @@ const addSprite = async () => {
   bunny.x = app.value.screen.width / 2;
   bunny.y = app.value.screen.height / 2;
   app.value.stage.addChild(bunny);
-  app.value.ticker.add((time) => {
+  app.value.ticker.add((time: any) => {
     bunny.rotation += 0.1 * time.deltaTime;
   });
 };

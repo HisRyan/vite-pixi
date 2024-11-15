@@ -22,7 +22,9 @@
         "paths": {
             "@/*": ["./src/*"],
             "@c/*": ["./src/components/*"]
-        }
+        },
+        "sourceMap": true,
+        "inlineSourceMap": false
     },
 
     "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","vite.config.ts"],

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { Application, Assets, Sprite, Texture, TilingSprite } from "pixi.js";
+import { Application, Assets, Texture, TilingSprite } from "pixi.js";
 import {
   addBackground,
   addFishes,
@@ -9,11 +9,11 @@ import {
   addDisplacementEffect,
 } from "./Add.ts";
 
-let app;
-let overlay;
+let app: any;
+let overlay: any;
 
 const initPixiBg = async () => {
-  const dom = document.querySelector("#_ROOT_");
+  const dom: any = document.querySelector("#_ROOT_");
   await app.init({ background: "#1099bb", resizeTo: dom });
   dom.appendChild(app.canvas);
 };
@@ -57,7 +57,7 @@ async function preload() {
 }
 const fishes = ref([]);
 
-function addWaterOverlay(app) {
+function addWaterOverlay(app: any) {
   // Create a water texture object.
   const texture = Texture.from("overlay");
 
@@ -77,11 +77,11 @@ onMounted(async () => {
   await preload();
   addBackground(app);
   addFishes(app, fishes.value);
-  addWaterOverlay(app, overlay);
+  addWaterOverlay(app);
   addDisplacementEffect(app);
   // Add the fish animation callback to the application's ticker.
-  app.ticker.add((time) => {
-    animateFishes(app, fishes.value, time);
+  app.ticker.add((time: any) => {
+    animateFishes(app, fishes.value);
     animateWaterOverlay(app, time, overlay);
   });
 });

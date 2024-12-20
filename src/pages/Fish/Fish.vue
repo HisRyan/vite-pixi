@@ -1,3 +1,8 @@
+<!--
+ * @create: by haojie.Li
+ * @Date: 2024-10-30 15:45:04
+ * @For: 
+-->
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { Application, Assets, Texture, TilingSprite } from "pixi.js";
@@ -8,6 +13,7 @@ import {
   animateWaterOverlay,
   addDisplacementEffect,
 } from "./Add.ts";
+
 
 let app: any;
 let overlay: any;
@@ -88,7 +94,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div id="_ROOT_" class="w-[800px] h-[800px]"></div>
+  <div id="_ROOT_" class="w-full h-screen"></div>
 </template>
 
 <style scoped lang="scss"></style>

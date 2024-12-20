@@ -1224,6 +1224,14 @@
     "@volar/language-core" "2.2.5"
     path-browserify "^1.0.1"
 
+"@vue-styled-components/core@^1.9.0":
+  version "1.9.0"
+  resolved "https://dev365.keytop.cn/nexus/repository/npm-group/@vue-styled-components/core/-/core-1.9.0.tgz#6495620951151473d5068792a0c2cc8a7d2e6fdc"
+  integrity sha512-9onnK3YWT0QBfWE1n/KE6J13ynXZ+DZiA6vDXwkq+YZltSHVPRF4UtT6WrOXsyforD9+6wOUYGBwy5Etlhhp+g==
+  dependencies:
+    lodash-es "^4.17.21"
+    stylis "^4.3.2"
+
 "@vue/babel-helper-vue-transform-on@1.2.2":
   version "1.2.2"
   resolved "https://registry.npmmirror.com/@vue/babel-helper-vue-transform-on/-/babel-helper-vue-transform-on-1.2.2.tgz#7f1f817a4f00ad531651a8d1d22e22d9e42807ef"
@@ -2964,7 +2972,7 @@ local-pkg@^0.5.0:
     mlly "^1.4.2"
     pkg-types "^1.0.3"
 
-lodash-es@^4.17.15:
+lodash-es@^4.17.15, lodash-es@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
@@ -3858,6 +3866,11 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1, strip-json-comments@~3.1
   version "3.1.1"
   resolved "https://registry.npmmirror.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
+
+stylis@^4.3.2:
+  version "4.3.4"
+  resolved "https://dev365.keytop.cn/nexus/repository/npm-group/stylis/-/stylis-4.3.4.tgz#ca5c6c4a35c4784e4e93a2a24dc4e9fa075250a4"
+  integrity sha512-osIBl6BGUmSfDkyH2mB7EFvCJntXDrLhKjHTRj/rK6xLH0yuPrHULDRQzKokSOD4VoorhtKpfcfW1GAntu8now==
 
 sucrase@^3.32.0:
   version "3.35.0"

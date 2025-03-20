@@ -1,0 +1,20 @@
+{
+  "name": "kt-ui",
+  "version": "1.2.0",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "files": [
+    "dist",
+    "es"
+  ],
+  "dependencies": {
+    "@types/lodash-es": "^4.17.12",
+    "lodash-es": "^4.17.21",
+    "vue": "^3.3.4"
+  },
+  "yalcSig": "62c3466ce7e1aa38e14d3ade3dcdd730"
+}

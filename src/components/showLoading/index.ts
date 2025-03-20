@@ -3,7 +3,7 @@
  * @Date: 2024-12-02 13:52:44
  * @For:
  */
-import { createApp, defineComponent, h, ref } from "vue";
+import { App, createApp, defineComponent, h, ref } from "vue";
 import { styled } from "@vue-styled-components/core";
 import { LoadingOutlined } from "@ant-design/icons-vue";
 
@@ -76,4 +76,18 @@ export const hideLoading = (contain?: any) => {
       loadingDiv.remove(); // 移除 loading div
     }
   }
+};
+
+export function registerLoading(app: App) {
+  app.config.globalProperties.showLoading = () => {
+    showLoading();
+  };
+}
+
+export const useLoading = {
+  install(app: App) {
+    app.config.globalProperties.showLoading = () => {
+      showLoading();
+    };
+  },
 };

@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "kt-ui": {
+      "signature": "62c3466ce7e1aa38e14d3ade3dcdd730",
+      "file": true
+    }
+  }
+}

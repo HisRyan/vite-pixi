@@ -7,6 +7,7 @@ import vue from "@vitejs/plugin-vue";
 import usePluginImport from "vite-plugin-importer";
 import Components from "unplugin-vue-components/vite";
 import { AntDesignVueResolver } from "unplugin-vue-components/resolvers";
+// import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export const vitePlugins = [
   vue(),

@@ -18,7 +18,7 @@ export function addBackground(app: any) {
     background.height = app.screen.height * 1.2;
     background.scale.x = background.scale.y;
   }
-
+  console.log(background);
   // Position the background sprite in the center of the stage.
   background.x = app.screen.width / 2;
   background.y = app.screen.height / 2;

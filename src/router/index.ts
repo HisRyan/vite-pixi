@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+import axios from 'axios'
+import i18n ,{setNewLangMessage} from "@/local/lang";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -29,6 +31,15 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(""),
   routes,
+});
+// 添加全局前置守卫
+router.beforeEach(async (_, _from, next) => {
+  const res = await axios.get('http://127.0.0.1:8080/translations')
+  const { data } = res;
+  const { en_GB } = data;
+  setNewLangMessage('en_GB', en_GB);
+  next();
+  next();
 });
 
 export default router;

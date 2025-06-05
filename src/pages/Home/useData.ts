@@ -1,4 +1,3 @@
-import { watchEffect, ref, unref } from "vue";
 export function useData(data: any) {
   const a = ref(1);
   const getA = () => {

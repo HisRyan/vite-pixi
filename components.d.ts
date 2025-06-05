@@ -9,8 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
     AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
-    ARangePicker: typeof import('ant-design-vue/es')['RangePicker']
-    ASelect: typeof import('ant-design-vue/es')['Select']
+    AInput: typeof import('ant-design-vue/es')['Input']
     RoleTree: typeof import('./src/components/RoleTree/RoleTree.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

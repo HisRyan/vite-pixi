@@ -1,5 +1,5 @@
 <script setup lang="ts">
-console.log('02 commit');
+console.log('03 commit');
 </script>
 
 <template>

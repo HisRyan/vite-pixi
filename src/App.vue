@@ -1,6 +1,4 @@
-<script setup lang="ts">
-console.log('01 commit');
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <a-config-provider>

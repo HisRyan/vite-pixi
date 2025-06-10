@@ -1,5 +1,6 @@
 <script setup lang="ts">
 console.log('05 commit');
+console.log('test pr');
 </script>
 
 <template>
